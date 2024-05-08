@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\baseline_login_black_24dp.png" />
+    <None Remove="View\bgu-1.jpg" />
+    <None Remove="View\img1038337.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Backend\Backend.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\baseline_login_black_24dp.png" />
+    <Resource Include="View\bgu-1.jpg" />
+    <Resource Include="View\img1038337.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="kanban.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
